@@ -7,6 +7,6 @@ spec:
     admin:
     - superuser
     - createdb
-    log_user: []
+    loguser: []
   databases:
-    logs: admin
+    logs: loguser
