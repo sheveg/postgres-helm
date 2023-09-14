@@ -1,0 +1,12 @@
+name: postgresql-cluster
+spec:
+  volume:
+    size: 1Gi
+  numberOfInstances: 1
+  users:
+    admin:
+    - superuser
+    - createdb
+    log_user: []
+  databases:
+    logs: admin
