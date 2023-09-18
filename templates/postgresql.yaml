@@ -3,7 +3,7 @@ kind: postgresql
 metadata:
   name: {{ .Values.name }}
 spec:
-  teamId: "acid"
+  teamId: {{ .Values.spec.teamId }}
   volume:
     size: {{ .Values.spec.volume.size }}
   numberOfInstances: {{ .Values.spec.numberOfInstances }}
